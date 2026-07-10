@@ -1,7 +1,7 @@
 -- ==================================================================
 print("═══ BY SM1LER ═══")
 print("✅ Loaded successfully!")
-print("═══ T-Pose Edition | Speed 35 | Click Fling ═══")
+print("═══ By SM1LER ═══")
 -- ==================================================================
 
 local EMOTE_ID = 140635414785900
@@ -140,8 +140,7 @@ task.spawn(function()
     task.wait(1)
     c:Create(v, TweenInfo.new(1, Enum.EasingStyle.Quint), {TextTransparency = 0.2}):Play()
     c:Create(w, TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.fromOffset(240, 1), BackgroundTransparency = 0.6}):Play()
-    task.wait(1.5)
-    task.wait(1.5)
+    task.wait(3)
     c:Create(s, TweenInfo.new(0.6, Enum.EasingStyle.Quad), {TextTransparency = 1}):Play()
     c:Create(t, TweenInfo.new(0.6, Enum.EasingStyle.Quad), {Transparency = 1}):Play()
     c:Create(u, TweenInfo.new(0.5, Enum.EasingStyle.Quad), {TextTransparency = 1}):Play()
@@ -154,105 +153,7 @@ task.spawn(function()
 end)
 
 -- ==================================================================
-local aa = Instance.new("ScreenGui")
-aa.Name = "B"
-aa.ResetOnSpawn = false
-aa.Parent = k
-
-local ab = Instance.new("Frame", aa)
-ab.Size = UDim2.new(0, 300, 0, 200)
-ab.Position = UDim2.new(0.5, -150, 0.5, -100)
-ab.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
-ab.BackgroundTransparency = 0.1
-ab.Visible = false
-ab.Active = true
-ab.Draggable = true
-i(ab, 16)
-
-local ac = Instance.new("UIStroke", ab)
-ac.Thickness = 2
-ac.Color = Color3.fromRGB(0, 180, 255)
-
-local ad = Instance.new("TextLabel", ab)
-ad.Size = UDim2.new(1, -50, 0, 30)
-ad.Position = UDim2.new(0, 20, 0, 8)
-ad.BackgroundTransparency = 1
-ad.Text = "💀 T-POSE EDITION"
-ad.TextColor3 = Color3.fromRGB(0, 200, 255)
-ad.Font = Enum.Font.GothamBlack
-ad.TextSize = 17
-ad.TextXAlignment = Enum.TextXAlignment.Left
-
-local ae = Instance.new("TextButton", ab)
-ae.Size = UDim2.new(0, 35, 0, 35)
-ae.Position = UDim2.new(1, -42, 0, 6)
-ae.BackgroundTransparency = 1
-ae.Text = "✖"
-ae.TextColor3 = Color3.fromRGB(255, 100, 100)
-ae.Font = Enum.Font.GothamBold
-ae.TextSize = 18
-ae.MouseButton1Click:Connect(function()
-    if h then
-        h = false
-        aq()
-        local char = f.Character
-        if char then
-            local hum = char:FindFirstChild("Humanoid")
-            if hum then hum.WalkSpeed = 16 end
-        end
-    end
-    aa:Destroy()
-end)
-
-local af = Instance.new("TextLabel", ab)
-af.Size = UDim2.new(1, -40, 0, 22)
-af.Position = UDim2.new(0, 20, 0, 45)
-af.BackgroundTransparency = 1
-af.Text = "⚪ Status: Inactive"
-af.TextColor3 = Color3.fromRGB(160, 160, 180)
-af.Font = Enum.Font.GothamMedium
-af.TextSize = 13
-af.TextXAlignment = Enum.TextXAlignment.Left
-
-local ag = Instance.new("TextLabel", ab)
-ag.Size = UDim2.new(1, -40, 0, 18)
-ag.Position = UDim2.new(0, 20, 0, 65)
-ag.BackgroundTransparency = 1
-ag.Text = "🖱️ Click enemy = FLING | Anti-Fling ON"
-ag.TextColor3 = Color3.fromRGB(130, 130, 150)
-ag.Font = Enum.Font.Gotham
-ag.TextSize = 10
-ag.TextXAlignment = Enum.TextXAlignment.Left
-
-local ah = Instance.new("Frame", ab)
-ah.Size = UDim2.new(1, -40, 1, -95)
-ah.Position = UDim2.new(0, 20, 0, 88)
-ah.BackgroundTransparency = 1
-
-local ai = Instance.new("UIListLayout", ah)
-ai.Padding = UDim.new(0, 10)
-ai.SortOrder = Enum.SortOrder.LayoutOrder
-
-local function aj(text, color, callback)
-    local Btn = Instance.new("TextButton", ah)
-    Btn.Size = UDim2.new(1, 0, 0, 40)
-    Btn.BackgroundColor3 = color
-    Btn.BackgroundTransparency = 0.25
-    Btn.Text = text
-    Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Btn.Font = Enum.Font.GothamBold
-    Btn.TextSize = 14
-    i(Btn, 10)
-    Btn.MouseEnter:Connect(function()
-        c:Create(Btn, TweenInfo.new(0.2), {BackgroundTransparency = 0.1}):Play()
-    end)
-    Btn.MouseLeave:Connect(function()
-        c:Create(Btn, TweenInfo.new(0.2), {BackgroundTransparency = 0.25}):Play()
-    end)
-    Btn.MouseButton1Click:Connect(callback)
-    return Btn
-end
-
+-- By SM1LER
 -- ==================================================================
 local ak = nil
 local al = nil
@@ -319,6 +220,110 @@ local function aq()
     if al then al:Disconnect(); al = nil end
 end
 
+-- ==================================================================
+-- By SM1LER
+-- ==================================================================
+local aa = Instance.new("ScreenGui")
+aa.Name = "B"
+aa.ResetOnSpawn = false
+aa.Parent = k
+
+local ab = Instance.new("Frame", aa)
+ab.Size = UDim2.new(0, 300, 0, 200)
+ab.Position = UDim2.new(0.5, -150, 0.5, -100)
+ab.BackgroundColor3 = Color3.fromRGB(15, 15, 20)
+ab.BackgroundTransparency = 0.1
+ab.Visible = false
+ab.Active = true
+ab.Draggable = true
+i(ab, 16)
+
+local ac = Instance.new("UIStroke", ab)
+ac.Thickness = 2
+ac.Color = Color3.fromRGB(0, 180, 255)
+
+local ad = Instance.new("TextLabel", ab)
+ad.Size = UDim2.new(1, -50, 0, 30)
+ad.Position = UDim2.new(0, 20, 0, 8)
+ad.BackgroundTransparency = 1
+ad.Text = "T-POSE EDITION"
+ad.TextColor3 = Color3.fromRGB(0, 200, 255)
+ad.Font = Enum.Font.GothamBlack
+ad.TextSize = 17
+ad.TextXAlignment = Enum.TextXAlignment.Left
+
+local ae = Instance.new("TextButton", ab)
+ae.Size = UDim2.new(0, 35, 0, 35)
+ae.Position = UDim2.new(1, -42, 0, 6)
+ae.BackgroundTransparency = 1
+ae.Text = "✖"
+ae.TextColor3 = Color3.fromRGB(255, 100, 100)
+ae.Font = Enum.Font.GothamBold
+ae.TextSize = 18
+ae.MouseButton1Click:Connect(function()
+    if h then
+        h = false
+        aq()
+        local char = f.Character
+        if char then
+            local hum = char:FindFirstChild("Humanoid")
+            if hum then hum.WalkSpeed = 16 end
+        end
+    end
+    aa:Destroy()
+end)
+
+local af = Instance.new("TextLabel", ab)
+af.Size = UDim2.new(1, -40, 0, 22)
+af.Position = UDim2.new(0, 20, 0, 45)
+af.BackgroundTransparency = 1
+af.Text = "⚪ Status: Inactive"
+af.TextColor3 = Color3.fromRGB(160, 160, 180)
+af.Font = Enum.Font.GothamMedium
+af.TextSize = 13
+af.TextXAlignment = Enum.TextXAlignment.Left
+
+local ag = Instance.new("TextLabel", ab)
+ag.Size = UDim2.new(1, -40, 0, 18)
+ag.Position = UDim2.new(0, 20, 0, 65)
+ag.BackgroundTransparency = 1
+ag.Text = " Click enemy = FLING | Anti-Fling ON"
+ag.TextColor3 = Color3.fromRGB(130, 130, 150)
+ag.Font = Enum.Font.Gotham
+ag.TextSize = 10
+ag.TextXAlignment = Enum.TextXAlignment.Left
+
+local ah = Instance.new("Frame", ab)
+ah.Size = UDim2.new(1, -40, 1, -95)
+ah.Position = UDim2.new(0, 20, 0, 88)
+ah.BackgroundTransparency = 1
+
+local ai = Instance.new("UIListLayout", ah)
+ai.Padding = UDim.new(0, 10)
+ai.SortOrder = Enum.SortOrder.LayoutOrder
+
+local function aj(text, color, callback)
+    local Btn = Instance.new("TextButton", ah)
+    Btn.Size = UDim2.new(1, 0, 0, 40)
+    Btn.BackgroundColor3 = color
+    Btn.BackgroundTransparency = 0.25
+    Btn.Text = text
+    Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Btn.Font = Enum.Font.GothamBold
+    Btn.TextSize = 14
+    i(Btn, 10)
+    Btn.MouseEnter:Connect(function()
+        c:Create(Btn, TweenInfo.new(0.2), {BackgroundTransparency = 0.1}):Play()
+    end)
+    Btn.MouseLeave:Connect(function()
+        c:Create(Btn, TweenInfo.new(0.2), {BackgroundTransparency = 0.25}):Play()
+    end)
+    Btn.MouseButton1Click:Connect(callback)
+    return Btn
+end
+
+-- ==================================================================
+-- By SM1LER
 -- ==================================================================
 getgenv().OldPos = nil
 getgenv().FPDH = workspace.FallenPartsDestroyHeight
@@ -456,6 +461,8 @@ g.Button1Down:Connect(function()
 end)
 
 -- ==================================================================
+-- By SM1LER
+-- ==================================================================
 local au = nil
 local function av()
     if au then return end
@@ -474,10 +481,8 @@ local function av()
         end
     end)
 end
-
 local function aw() if au then au:Disconnect(); au = nil end end
 
--- ==================================================================
 local ax = nil
 local function ay()
     if ax then return end
@@ -490,10 +495,8 @@ local function ay()
         end
     end)
 end
-
 local function az() if ax then ax:Disconnect(); ax = nil end end
 
--- ==================================================================
 local function ba()
     if al then return end
     al = d.Heartbeat:Connect(function()
@@ -503,7 +506,7 @@ local function ba()
 end
 
 -- ==================================================================
--- КНОПКИ (bd и be объявлены ДО bc которая их использует)
+-- By SM1LER
 -- ==================================================================
 local bd
 local be
@@ -590,4 +593,4 @@ task.wait(8.5)
 pcall(function() l:Destroy() end)
 ab.Visible = true
 print("By SM1LER")
--- ==================================================================S
+-- ==================================================================
